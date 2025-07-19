@@ -8,6 +8,8 @@ import PrivateRoute from './components/PrivateRoute.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import Board from './pages/Board.jsx'
 import { ThemeProvider } from './context/ThemeContext.jsx'
+import { Provider } from 'react-redux'
+import store from './redux/store.js'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,7 +25,9 @@ const router = createBrowserRouter(
 )
 
 createRoot(document.getElementById('root')).render(
-  <ThemeProvider>
-    <RouterProvider router={router} />
-  </ThemeProvider>
+  <Provider store={store}>
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  </Provider>
 )

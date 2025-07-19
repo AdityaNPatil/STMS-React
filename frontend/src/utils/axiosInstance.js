@@ -1,3 +1,4 @@
+/* Pre-configures axios with base URL and attaches JWT token to every request if available. */
 import axios from "axios";
 
 const axiosInstance = axios.create({

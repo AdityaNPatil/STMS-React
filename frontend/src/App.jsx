@@ -51,7 +51,7 @@ function App() {
       <Sidebar />
       <div className="flex-grow flex flex-col">
         <Navbar />
-        <main className="p-4 flex-grow">
+        <main className="p-2 flex-grow">
           <Outlet />
         </main>
       </div>

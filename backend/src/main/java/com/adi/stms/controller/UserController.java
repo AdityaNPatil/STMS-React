@@ -1,9 +1,13 @@
 package com.adi.stms.controller;
 
+<<<<<<< HEAD
 import com.adi.stms.dto.AuthResponse;
 import com.adi.stms.dto.UserDTO;
 import com.adi.stms.entity.User;
 import com.adi.stms.security.JwtUtil;
+=======
+import com.adi.stms.entity.User;
+>>>>>>> 67f92169826425ce3ab7430db505177f6e58a5a7
 import com.adi.stms.service.UserService;
 import org.springframework.web.bind.annotation.*;
 

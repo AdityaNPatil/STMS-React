@@ -3,12 +3,12 @@ import axiosInstance from "../../utils/axiosInstance";
 
 // async thunk for api requests using axios instance -- login and register
 export const login = createAsyncThunk("auth/login", async(userData, thunkAPI) => {
-    const response = await axiosInstance.post("/auth/login", userData)
+    const response = await axiosInstance.post("/users/login", userData)
     return response.data
 })
 
 export const register = createAsyncThunk("auth/register", async(userData, thunkAPI) => {
-    const response = await axiosInstance.post("/auth/register", userData);
+    const response = await axiosInstance.post("/users/register", userData);
     return response.data;
 })
 

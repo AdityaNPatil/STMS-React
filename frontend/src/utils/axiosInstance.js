@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: "https://demoBackendApi/api",
+    baseURL: "http://localhost:8080/api",
 })
 
 // allows to modify request before its sent 

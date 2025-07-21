@@ -2,12 +2,13 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axiosInstance from "../../utils/axiosInstance";
 
 export const fetchTasks = createAsyncThunk("tasks/fetchTasks", async (boardId) => {
-    const response = await axiosInstance.get(`/boards/${boardId}/tasks`);
+    const response = await axiosInstance.get(`/tasks/board/${boardId}`);
+
     return response.data;
 })
 
 export const createTask = createAsyncThunk("tasks/createTask", async ({ boardId, task }) => {
-    const response = await axiosInstance.post(`/boards/${boardId}/tasks`, task);
+    const response = await axiosInstance.post(`/tasks/createTask`, task);
     return response.data;
 })
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchTasks } from "../features/auth/tasksSlice";
+import { createTask, fetchTasks } from "../features/auth/tasksSlice";
 import TaskCard from "../components/TaskCard";
 import { useParams } from "react-router-dom";
 
